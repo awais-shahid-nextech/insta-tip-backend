@@ -1,11 +1,11 @@
 import express from 'express'
 
-const app = express()
+const expressApp = express()
 
-app.get('/', (_, res) => {
-    res.json({ok: true})
+expressApp.get('/', (_, res) => {
+    res.json({okSir: true})
 })
 
-app.listen(3000, () => {
+expressApp.listen(3000, () => {
     console.log('listening...')
 })
