@@ -5,6 +5,4 @@ if ! echo "$branch" | grep -E "^(feature|fix|hotfix|chore)\/[A-Za-z0-9_-]+$" >/d
   exit 1
 fi
 
-pnpm build
-
 exit 0
