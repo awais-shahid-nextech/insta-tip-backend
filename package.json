@@ -21,13 +21,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
-    "inversify": "^6.0.2",
-    "inversify-express-utils": "^6.4.6",
     "morgan": "^1.10.0",
-    "reflect-metadata": "^0.2.1"
+    "rimraf": "^5.0.5"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -36,14 +34,12 @@
     "@types/node": "^20.11.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
-    "dotenv": "^16.4.5",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
