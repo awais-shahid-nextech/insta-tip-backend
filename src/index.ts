@@ -1,11 +1,14 @@
-import express from 'express'
+import http from 'http'
+import { expressApp } from './app'
 
-const expressApp = express()
+const PORT = process.env.PORT ?? 8000
 
-expressApp.get('/', (_, res) => {
-    res.json({ okSir: true })
-})
+const server = http.createServer(expressApp)
 
-expressApp.listen(3000, () => {
-    console.log('listening...')
-})
+async function startServer() {
+    server.listen(PORT, () => {
+        console.log(`Server listening on port: ${PORT}`)
+    })
+}
+
+startServer()
