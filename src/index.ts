@@ -1,5 +1,5 @@
 import http from 'http'
-import { expressApp } from './app'
+import { expressApp } from './config/app'
 
 const PORT = process.env.PORT ?? 8000
 
