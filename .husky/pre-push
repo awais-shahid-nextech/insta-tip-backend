@@ -1,0 +1,8 @@
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+if ! echo "$branch" | grep -E "^(feature|fix|hotfix|chore)\/[A-Za-z0-9_-]+$" >/dev/null; then
+  echo "Error: Invalid branch name. Branch names must follow the convention: feature/..., fix/..., hotfix/... or chore/..."
+  exit 1
+fi
+
+exit 0
